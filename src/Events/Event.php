@@ -13,7 +13,6 @@ namespace Overtrue\LaravelFollow\Events;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Overtrue\LaravelFollow\Follow;
 
@@ -24,7 +23,7 @@ use Overtrue\LaravelFollow\Follow;
  */
 class Event
 {
-    use Dispatchable, InteractsWithSockets, SerializesModels;
+    use InteractsWithSockets, SerializesModels;
 
     public $causer;
 
